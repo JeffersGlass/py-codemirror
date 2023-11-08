@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "@pyscript/core": "https://pyscript.net/releases/2023.11.1/core.js"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="dist/py-codemirror.css">
+    <script src="mini-coi.js"></script>
+    <script src="dist/py-codemirror.js" type="module"></script>
+</head>
+<body>
+    <script type="py">
+        for i in range(5):
+            print(i)
+    </script>
+    <py-codemirror>
+        for j in range(10):
+            print(j)
+    </py-codemirror>
+</body>
+</html>
